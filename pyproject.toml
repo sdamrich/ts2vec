@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ts2vec"
+version = "0.1.0"
+description = "A brief description of your project"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+dependencies = [
+    "Bottleneck",
+    "torch",
+    "scipy",
+    "numpy",
+    "statsmodels",
+    "pandas",
+    "scikit_learn"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
